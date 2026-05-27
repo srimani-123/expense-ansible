@@ -10,7 +10,7 @@
 
   - name: start and enable mysql server
     ansible.builtin.service:
-      name: httpd
+      name: mysqld
       state: started
       enabled: yes
 
@@ -25,4 +25,4 @@
   - name: print the output
     ansible.builtin.debug:
       msg: "Mysql info: {{ mysql_info }}"
-      
+
